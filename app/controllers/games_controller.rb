@@ -17,11 +17,12 @@ class GamesController < ApplicationController
     @game = Game.find_by(params[:id])
     @game.update(game_params)
     @game.save
-    render json: @game 
+    render json: @game
   end
 
   def index
     @games = Game.all
+    render json: @game
   end
 
 
