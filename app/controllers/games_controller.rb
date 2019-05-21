@@ -16,4 +16,11 @@ class GamesController < ApplicationController
     @games = Game.all
   end
 
+
+  private
+
+  def game_params
+    params.permit(state: [], :id)
+  end
+
 end
