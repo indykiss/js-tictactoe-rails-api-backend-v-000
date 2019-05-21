@@ -12,6 +12,7 @@ class GamesController < ApplicationController
   end
 
   def index
-  end 
+    @games = Game.all
+  end
 
 end
