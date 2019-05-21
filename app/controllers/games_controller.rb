@@ -10,12 +10,14 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find_by(params[:id])
-    render json: @game  
+    render json: @game
   end
 
   def update
     @game = Game.find_by(params[:id])
-
+    @game.update(game_params)
+    @game.save
+    render json: @game 
   end
 
   def index
