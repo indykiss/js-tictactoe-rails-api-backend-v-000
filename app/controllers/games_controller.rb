@@ -8,7 +8,7 @@ class GamesController < ApplicationController
   def show
   end
 
-  def updated
+  def update
   end
 
   def index
