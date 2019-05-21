@@ -2,16 +2,16 @@ class GamesController < ApplicationController
   # Add your GamesController code here
 
 
-  def create 
-  end 
+  def create
+  end
 
-  def show 
-  end 
+  def show
+  end
 
-  def updated 
-  end 
+  def updated
+  end
 
-  def index 
+  def index
   end 
 
 end
