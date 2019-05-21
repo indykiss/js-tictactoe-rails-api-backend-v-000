@@ -10,6 +10,8 @@ class GamesController < ApplicationController
   end
 
   def update
+    @game = Game.find_by(params[:id])
+
   end
 
   def index
