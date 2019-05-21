@@ -3,7 +3,7 @@ class GamesController < ApplicationController
 
 
   def create
-    @game = Game.new
+    @game = Game.create(game_params)
   end
 
   def show
